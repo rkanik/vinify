@@ -1,0 +1,80 @@
+:root {
+	--text-primary: #232020;
+	--text-secondary: #ffe8d9;
+	--text-accent: #006c67;
+
+	--bg-primary: #3d2b56;
+	--bg-secondary: #ffe8d9;
+	--bg-green: #006c67;
+
+	// Font Size
+	--heading-font-size: 27px;
+	--heading-xl-font-size: 27px;
+	--content-font-size: 17px;
+
+	// Line Height
+	--heading-line-height: 30px;
+	--heading-xl-line-height: 30px;
+	--content-line-height: 20px;
+}
+
+@include on("sm") {
+	:root {
+		// Font Size
+		--heading-font-size: 31.6px;
+		--heading-xl-font-size: 35.6px;
+		--content-font-size: 19.6px;
+		// Line Height
+		--heading-line-height: 35px;
+		--heading-xl-line-height: 38px;
+		--content-line-height: 24px;
+	}
+}
+@include on("md") {
+	:root {
+		// Font Size
+		--heading-font-size: 36.2px;
+		--heading-xl-font-size: 44.4px;
+		--content-font-size: 22.2px;
+		// Line Height
+		--heading-line-height: 40px;
+		--heading-xl-line-height: 46px;
+		--content-line-height: 28px;
+	}
+}
+@include on("lg") {
+	:root {
+		// Font Size
+		--heading-font-size: 40.8px;
+		--heading-xl-font-size: 52.8px;
+		--content-font-size: 24.8px;
+		// Line Height
+		--heading-line-height: 45px;
+		--heading-xl-line-height: 54px;
+		--content-line-height: 32px;
+	}
+}
+@include on("xl") {
+	:root {
+		// Font Size
+		--heading-font-size: 45.4px;
+		--heading-xl-font-size: 61.8px;
+		--content-font-size: 27.4px;
+		// Line Height
+		--heading-line-height: 50px;
+		--heading-xl-line-height: 62px;
+		--content-line-height: 36px;
+	}
+}
+@include on("2xl") {
+	:root {
+		// Font Size
+		--heading-font-size: 50px;
+		--heading-xl-font-size: 70px;
+		--content-font-size: 30px;
+		// Line Height
+		--heading-line-height: 55px;
+		--heading-xl-line-height: 70px;
+		--content-line-height: 40px;
+	}
+}

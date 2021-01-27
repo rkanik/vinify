@@ -1,0 +1,22 @@
+@mixin font($size, $height) {
+	font-size: $size;
+	line-height: $height;
+}
+
+// Responsive Mixins
+$breakpoints-up: (
+	"sm": 640px,
+	"md": 768px,
+	"lg": 1024px,
+	"xl": 1280px,
+	"2xl": 1536px,
+	"2p5xl": 1650px,
+);
+
+@mixin on($size) {
+	@media (min-width: map-get(
+      $breakpoints-up , $size
+   )) {
+		@content;
+	}
+}
