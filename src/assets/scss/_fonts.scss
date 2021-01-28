@@ -5,6 +5,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Quincy CF";
+	src: url("../fonts/QuincyCFExtraBold.otf");
+	src: url("../fonts/QuincyCFExtraBold.otf?#iefix") format("embedded-opentype"),
+		url("../fonts/QuincyCFExtraBold.otf") format("woff2"), url("../fonts/QuincyCFExtraBold.otf") format("woff"),
+		url("../fonts/QuincyCFExtraBold.otf") format("truetype");
+}
+
 h1,
 h2,
 h3,
