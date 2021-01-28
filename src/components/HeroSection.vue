@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- Hero First -->
-		<div class="bg-secondary relative pt-12 pb-40 lg:pt-0 lg:pb-0">
+		<div class="bg-secondary relative pt-12 pb-40 lg:pt-0 lg:pb-0 overflow-hidden">
 			<div class="relative z-20">
 				<div
 					class="ml-12 md:ml-16 lg:ml-0 lg:top-16 lg:left-16 xl:top-24 xl:left-24 2xl:left-32 2xl:top-32 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-3xl lg:absolute lg:z-10"
@@ -41,9 +41,9 @@
 		</div>
 
 		<!-- Hero Second -->
-		<div class="bg-primary relative h-80 sm:h-96 lg:hidden">
+		<div class="bg-primary relative h-72 sm:h-80 lg:hidden">
 			<img
-				class="absolute -mt-32 sm:-mt-48 right-4 sm:right-16 md:right-40 z-30 max-w-xs sm:max-w-sm"
+				class="hero-b-img absolute -mt-32 sm:-mt-48 right-4 sm:right-20 md:right-32 z-30 w-full"
 				src="@/assets/images/Sara_Circle_mobile-03.png"
 			/>
 		</div>
@@ -55,7 +55,8 @@
 					<h2
 						class="heading text-secondary max-w-sm lg:max-w-lg xl:max-w-full mx-auto lg:mt-16 xl:mt-20 2xl:mt-24"
 					>
-						Chat with Naomi below to find out more
+						<span class="lg:hidden">Chat with Naomi below to find out more</span>
+						<span class="hidden lg:block">Sell wine online?  Chat to Naomi below.</span>
 					</h2>
 					<svg
 						width="17.862"
@@ -134,3 +135,14 @@ export default {
 	},
 }
 </script>
+<style lang="scss" scoped>
+	.hero-b-img {
+		width: 268px;
+		@include on("sm") {
+			width: 294px;
+		}
+		@include on("md") {
+			width: 350px;
+		}
+	}
+</style>

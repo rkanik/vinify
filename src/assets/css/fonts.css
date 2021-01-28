@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "QuincyCF";
+	src: local("QuincyCFExtraBold"), url(../fonts/QuincyCFExtraBold.otf) format("otf");
+	font-weight: 900;
+	font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "QuincyCF";
+	font-weight: 900;
+}

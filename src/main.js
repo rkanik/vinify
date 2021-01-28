@@ -5,6 +5,7 @@ import components from './components'
 
 // Styles
 import './assets/css/tailwind.css'
+import './assets/css/fonts.css'
 import './assets/scss/main.scss'
 
 // Global components

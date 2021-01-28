@@ -42,7 +42,7 @@
 					<div class="px-7 lg:px-0 relative lg:flex-1">
 						<img
 							alt="World Map Small"
-							class="lg:hidden w-full sm:w-4/5 mx-auto"
+							class="lg:hidden w-72 sm:w-4/5 mx-auto"
 							src="../assets/images/worldmap-640.png"
 						/>
 						<img
@@ -56,12 +56,13 @@
 							class="px-7 lg:px-0 sm:mx-auto sm:w-11/12 md:w-4/5 lg:w-full"
 						>
 							<h2 class="heading mx-2">
-								Identify your most popular regions and grape varieties
+								<span class="lg:text-accent">Identify</span> your most
+								popular regions and grape varieties
 							</h2>
 							<hr
-								class="mt-5 mb-8 lg:mt-8 2xl:mt-10 2xl:mb-10 border-t border-primary border-opacity-25 mx-6 lg:mx-0"
+								class="mt-5 mb-8 lg:mt-8 2xl:mt-10 2xl:mb-10 border-t border-primary border-opacity-25 mx-6 lg:mx-0 2xl:mr-36"
 							/>
-							<p class="content mx-4 lg:mx-0">
+							<p class="content mx-4 lg:mx-0 2xl:mr-36">
 								Make more informed buying decisions by identifying the
 								patterns in core wine traits and your customer’s palate
 								profiles.
@@ -126,7 +127,7 @@
 						/>
 					</div>
 					<div
-						class="px-4 sm:px-0 mt-10 text-center lg:text-left lg:flex-1 -mx-2 lg:mx-0 sm:mx-auto sm:w-11/12 md:w-4/5 lg:w-full"
+						class="px-4 sm:px-0 mt-10 text-center lg:text-left lg:flex-1 sm:mx-auto sm:w-11/12 md:w-4/5 lg:w-full"
 					>
 						<h2 class="heading">
 							We <span class="lg:text-accent">automate</span> 10+ data
@@ -162,7 +163,7 @@
 		<div class="py-14 lg:py-0 lg:mt-32 xl:mt-48 2xl:mt-80">
 			<vn-container>
 				<div class="flex flex-col lg:flex-row lg:items-center">
-					<div class="px-7 lg:px-1 lg:flex-1 relative">
+					<div class="p4-7 lg:px-1 lg:flex-1 relative">
 						<img alt="Wine Seller" src="@/assets/images/shopify.png" />
 					</div>
 					<div class="mt-10 lg:mt-0 text-center lg:text-left lg:flex-1">
@@ -170,7 +171,7 @@
 							class="sm:mx-auto sm:w-11/12 md:w-4/5 lg:w-full lg:pl-6 lg:pr-0 xl:pl-12 xl:pr-4 2xl:pl-32 2xl:pr-12"
 						>
 							<h2 class="heading -mx-2 lg:mx-0">
-								Quick integration with Shopify or Woocommerce with a
+								<span class="lg:text-accent">Quick integration</span> with Shopify or Woocommerce with a
 								click of a button
 							</h2>
 							<hr
@@ -188,10 +189,7 @@
 
 		<!-- -------- -->
 		<!-- Section -->
-		<div
-			id="keep-connected"
-			class="relative overflow-x-hidden lg:-mt-24 xl:-mt-64 2xl:-mt-56"
-		>
+		<div class="relative overflow-x-hidden lg:-mt-24 xl:-mt-64 2xl:-mt-56">
 			<img
 				class="w-full lg:hidden"
 				src="@/assets/images/last-section-bg-small.png"
@@ -203,7 +201,7 @@
 			<div
 				class="z-10 text-center absolute w-full max-w-xs sm:max-w-sm md:max-w-md left-2/4 top-2/3 sm:top-2/4 lg:left-auto lg:top-auto transform lg:transform-none -translate-x-2/4 -translate-y-2/4 lg:bottom-16 xl:bottom-24 2xl:bottom-44 lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl lg:right-1/10 xl:right-6/5 2xl:right-1/5"
 			>
-				<h2 class="heading">
+				<h2 class="heading mx-2">
 					Keep connected with your customers anytime, anywhere.
 				</h2>
 				<a
@@ -217,7 +215,7 @@
 		<!-- -------- -->
 		<!-- Bottom -->
 
-		<div class="bg-primary text-secondary py-10 2xl:py-24 relative z-10">
+		<div class="bg-primary py-10 2xl:py-24 relative z-10">
 			<vn-container>
 				<div class="px-7 lg:px-0">
 					<div class="lg:flex lg:space-x-8 lg:justify-between">
@@ -228,11 +226,11 @@
 						</h2>
 
 						<div
-							class="mt-14 lg:mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12"
+							class="mt-14 text-secondary lg:mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12"
 						>
 							<!-- 1 -->
 							<div>
-								<h4 class="text-2xl 2xl:text-3xl">About</h4>
+								<span class="text-2xl 2xl:text-3xl">About</span>
 								<div
 									class="flex flex-col text-base 2xl:text-xl mt-4 2xl:mt-5"
 								>
@@ -248,7 +246,7 @@
 
 							<!-- 2 -->
 							<div>
-								<h4 class="text-2xl 2xl:text-3xl">Need Help?</h4>
+								<span class="text-2xl 2xl:text-3xl">Need Help?</span>
 								<div
 									class="flex flex-col text-base 2xl:text-xl mt-4 2xl:mt-5"
 								>
@@ -260,7 +258,7 @@
 
 							<!-- 3 -->
 							<div>
-								<h4 class="text-2xl 2xl:text-3xl">Partnership</h4>
+								<span class="text-2xl 2xl:text-3xl">Partnership</span>
 								<div
 									class="flex flex-col text-base 2xl:text-xl mt-4 2xl:mt-5"
 								>
@@ -271,7 +269,7 @@
 
 							<!-- 4 -->
 							<div>
-								<h4 class="text-2xl 2xl:text-3xl">Social</h4>
+								<span class="text-2xl 2xl:text-3xl">Social</span>
 								<div
 									class="flex flex-col text-base 2xl:text-xl mt-4 2xl:mt-5"
 								>
@@ -293,7 +291,7 @@
 
 					<!-- 5 -->
 					<div class="mt-8 lg:mt-12">
-						<p class="text-xl opacity-40">
+						<p class="text-xl text-secondary opacity-40">
 							Copyright © 2021 Vinify BV. All rights reserved.
 						</p>
 					</div>
