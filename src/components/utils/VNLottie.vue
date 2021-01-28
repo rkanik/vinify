@@ -29,8 +29,7 @@ export default {
 			autoplay: this.options.autoplay !== false,
 			animationData: this.options.animationData,
 			rendererSettings: this.options.rendererSettings
-		}
-		);
+		});
 		this.$emit('created', this.anim)
 	},
 	computed: {
@@ -38,14 +37,6 @@ export default {
 			return {
 				width: `${this.size.width}${this.size.unit}`,
 				height: `${this.size.height}${this.size.unit}`,
-			}
-		}
-	},
-	watch: {
-		size: {
-			deep: true,
-			handler(s) {
-				console.log(s)
 			}
 		}
 	}

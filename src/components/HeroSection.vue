@@ -32,11 +32,7 @@
 						<VNArrow width="17.862" height="10.846" />
 					</vn-flex>
 				</div>
-				<VNLottie
-					v-if="isLargeDevice"
-					:options="defaultOptions"
-					@created="onLottieCreated"
-				/>
+				<VNLottie v-if="isLargeDevice" :options="defaultOptions" />
 			</div>
 			<img
 				class="absolute inset-x-0 bottom-0 z-10 w-full scale-101 lg:hidden"
@@ -109,27 +105,32 @@ export default {
 	},
 	data() {
 		return {
-			animationSpeed: 1,
-			defaultOptions: { animationData },
-			isLargeDevice: window.innerWidth >= 1024,
+			defaultOptions: {
+				loop: false,
+				animationData
+			},
+			isLargeDevice:
+				window.innerWidth >= 1024,
 		}
 	},
 	mounted() {
-		window.bus.$on('bp', width => {
-			console.log(width)
-			this.isLargeDevice =
-				width >= 1024 ? true : false
-		})
+		this.$nextTick(() => {
+			this.onResize();
+			window.addEventListener(
+				"resize", this.onResize
+			);
+		});
+	},
+	beforeDestroy() {
+		window.removeEventListener(
+			"resize", this.onResize
+		);
 	},
 	methods: {
-		onLottieCreated(lottie) {
-			console.log(lottie)
-		}
-	}
+		onResize() {
+			this.isLargeDevice =
+				window.innerWidth >= 1024
+		},
+	},
 }
 </script>
-
-<style lang='scss' scoped>
-	.hero-section {
-	}
-</style>

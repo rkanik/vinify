@@ -12,9 +12,11 @@ export default {
 	.vn-container {
 		padding-left: 28px;
 		padding-right: 28px;
-		@include on("2p5xl") {
+		@include on("lg") {
 			padding-left: 0;
 			padding-right: 0;
+		}
+		@include on("2p5xl") {
 			max-width: 1650px;
 		}
 	}

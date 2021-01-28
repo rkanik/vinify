@@ -1,31 +1,34 @@
 <template>
 	<div>
-		<a
-			href="#"
-			class="header__nav-item block py-2 px-4 hover:bg-gray-200 rounded-sm"
-			>Start</a
-		>
-		<a
-			href="#"
-			class="header__nav-item block py-2 px-4 mt-2 hover:bg-gray-200 rounded-sm"
-			>Resources</a
-		>
-		<hr class="border-t border-primary.border-opacity-25 my-4" />
-		<a
-			href="#"
-			class="header__nav-item block py-2 px-4 hover:bg-gray-200 rounded-sm"
-			>Pricing</a
-		>
-		<a
-			href="#"
-			class="header__nav-item block py-2 mt-2 px-4 hover:bg-gray-200 rounded-sm"
-			>Login</a
-		>
-		<hr class="border-t border-primary.border-opacity-25 my-4" />
+		<h2 class="text-primary header__title">Vinify</h2>
+		<div class="mt-4">
+			<a
+				href="#"
+				class="header__nav-item block py-2 px-4 hover:bg-gray-200 rounded-sm"
+				>Start</a
+			>
+			<a
+				href="#"
+				class="header__nav-item block py-2 px-4 mt-2 hover:bg-gray-200 rounded-sm"
+				>Resources</a
+			>
+			<hr class="border-t border-primary.border-opacity-25 my-4" />
+			<a
+				href="#"
+				class="header__nav-item block py-2 px-4 hover:bg-gray-200 rounded-sm"
+				>Pricing</a
+			>
+			<a
+				href="#"
+				class="header__nav-item block py-2 mt-2 px-4 hover:bg-gray-200 rounded-sm"
+				>Login</a
+			>
+		</div>
+		<!-- <hr class="border-t border-primary.border-opacity-25 my-4" /> -->
 		<vn-flex
 			to="#"
 			justify-center
-			class="bg-primary header__nav-item text-secondary rounded py-2 leading-none"
+			class="bg-primary mt-8 header__nav-item text-secondary rounded py-2 leading-none"
 		>
 			Signup
 		</vn-flex>

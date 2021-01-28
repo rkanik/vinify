@@ -44,7 +44,12 @@
 				</button>
 			</vn-flex>
 		</vn-container>
-		<MobileMenu v-model="menu">
+		
+		<MobileMenu2 v-model="menu">
+			<MobileMenuContent />
+		</MobileMenu2>
+
+		<MobileMenu>
 			<MobileMenuContent />
 		</MobileMenu>
 	</header>
@@ -52,11 +57,13 @@
 
 <script>
 import MobileMenu from '@/components/MobileMenu'
+import MobileMenu2 from '@/components/MobileMenu2'
 import MobileMenuContent from '@/components/MobileMenuContent'
 export default {
 	name: 'Header',
 	components: {
 		MobileMenu,
+		MobileMenu2,
 		MobileMenuContent
 	},
 	data() {
