@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2 class="text-primary header__title">Vinify</h2>
+		<h2 class="text-primary header__title">vinify</h2>
 		<div class="mt-4">
 			<a
 				href="#"
@@ -30,7 +30,7 @@
 			justify-center
 			class="bg-primary mt-8 header__nav-item text-secondary rounded py-2 leading-none"
 		>
-			Signup
+			Sign Up
 		</vn-flex>
 	</div>
 </template>

@@ -1,7 +1,9 @@
 <template>
 	<div>
 		<!-- Hero First -->
-		<div class="bg-secondary relative pt-12 pb-40 lg:pt-0 lg:pb-0 overflow-hidden">
+		<div
+			class="bg-secondary relative pt-12 pb-40 lg:pt-0 lg:pb-0 overflow-hidden"
+		>
 			<div class="relative z-20">
 				<div
 					class="ml-12 md:ml-16 lg:ml-0 lg:top-16 lg:left-16 xl:top-24 xl:left-24 2xl:left-32 2xl:top-32 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-3xl lg:absolute lg:z-10"
@@ -11,26 +13,23 @@
 						a
 						<span class="lg:text-accent">personal sommelier</span>
 					</h1>
-					<p
-						class="content mt-10 xl:mt-12 2xl:mt-14 mr-8 2xl:mr-0 xl:max-w-3xl"
-					>
+					<p class="content mt-10 xl:mt-12 2xl:mt-14 mr-8 xl:max-w-3xl">
 						Understand your customers, capture data and make every
 						interaction with your brand memorable.
 					</p>
 					<a
 						href="#"
 						class="h-12 md:h-14 xl:h-16 2xl:h-20 w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 2xl:py-1 bg-primary text-secondary flex items-center justify-center rounded-8px mt-11 lg:mt-12 xl:mt-14 2xl:mt-16 shadow-md text-base lg:text-lg xl:text-2xl 2xl:text-3xl"
-						>Get started for free</a
+						><span class="font-semibold mr-1 xl:mr-2">Get started</span
+						>for free</a
 					>
-					<vn-flex
-						items-center
-						justify-center
-						href="#"
-						class="content w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 mt-5 lg:mt-6 xl:mt-7 2xl:mt-8"
+					<a
+						href="#chat-bot-section"
+						class="flex items-center justify-center content w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 mt-5 lg:mt-6 xl:mt-7 2xl:mt-8"
 					>
-						<span class="mr-4">Tell me more</span>
+						<span class="mr-4 font-semibold">Tell me more</span>
 						<VNArrow width="17.862" height="10.846" />
-					</vn-flex>
+					</a>
 				</div>
 				<VNLottie v-if="isLargeDevice" :options="defaultOptions" />
 			</div>
@@ -49,14 +48,18 @@
 		</div>
 
 		<!-- Chat bot -->
-		<div class="relative pb-12 lg:pb-4 overflow-hidden">
+		<div id="chat-bot-section" class="relative pb-12 lg:pb-4 overflow-hidden">
 			<vn-container>
 				<div class="text-center relative z-10">
 					<h2
 						class="heading text-secondary max-w-sm lg:max-w-lg xl:max-w-full mx-auto lg:mt-16 xl:mt-20 2xl:mt-24"
 					>
-						<span class="lg:hidden">Chat with Naomi below to find out more</span>
-						<span class="hidden lg:block">Sell wine online?  Chat to Naomi below.</span>
+						<span class="lg:hidden"
+							>Chat with Naomi below to find out more</span
+						>
+						<span class="hidden lg:block"
+							>Sell wine online? Chat to Naomi below.</span
+						>
 					</h2>
 					<svg
 						width="17.862"
@@ -74,7 +77,7 @@
 						/>
 					</svg>
 					<div
-						class="bg-white shadow-lg p-4 rounded-xl mt-5 lg:mt-12 xl:mt-14 2xl:mt-16 lg:max-w-2xl xl:max-w-5xl 2xl:max-w-7xl mx-auto"
+						class="bg-white shadow-lg p-4 rounded-xl mt-5 lg:mt-12 xl:mt-14 2xl:mt-16 lg:max-w-2xl xl:max-w-5xl 2xl:max-w-6xl mx-auto"
 					>
 						<ChatBot />
 					</div>

@@ -70,7 +70,7 @@
 							<a
 								href="#"
 								class="mx-auto lg:mx-0 h-12 md:h-14 xl:h-16 2xl:h-20 w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 2xl:py-1 bg-primary text-secondary flex items-center justify-center rounded-8px mt-11 lg:mt-12 xl:mt-14 2xl:mt-16 shadow-md text-base lg:text-lg xl:text-2xl 2xl:text-3xl"
-								>Get started for free</a
+								><span class="font-semibold mr-1 xl:mr-2">Get started</span> for free</a
 							>
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 						<a
 							href="#"
 							class="mx-auto lg:mx-0 h-12 md:h-14 xl:h-16 2xl:h-20 w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 2xl:py-1 bg-primary text-secondary flex items-center justify-center rounded-8px mt-11 lg:mt-12 xl:mt-14 2xl:mt-16 shadow-md text-base lg:text-lg xl:text-2xl 2xl:text-3xl"
-							>Get started for free</a
+							><span class="font-semibold mr-1 xl:mr-2">Get started</span> for free</a
 						>
 					</div>
 				</div>
@@ -171,8 +171,8 @@
 							class="sm:mx-auto sm:w-11/12 md:w-4/5 lg:w-full lg:pl-6 lg:pr-0 xl:pl-12 xl:pr-4 2xl:pl-32 2xl:pr-12"
 						>
 							<h2 class="heading -mx-2 lg:mx-0">
-								<span class="lg:text-accent">Quick integration</span> with Shopify or Woocommerce with a
-								click of a button
+								<span class="lg:text-accent">Quick integration</span>
+								with Shopify or Woocommerce with a click of a button
 							</h2>
 							<hr
 								class="mt-5 mb-8 lg:mt-8 2xl:mt-10 2xl:mb-10 border-t border-primary border-opacity-25 mx-2 lg:mx-0"
@@ -207,7 +207,7 @@
 				<a
 					href="#"
 					class="mx-auto h-12 md:h-14 xl:h-16 2xl:h-20 w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 2xl:py-1 bg-primary text-secondary flex items-center justify-center rounded-8px mt-11 lg:mt-12 xl:mt-14 2xl:mt-16 shadow-md text-base lg:text-lg xl:text-2xl 2xl:text-3xl"
-					>Get started for free</a
+					><span class="font-semibold mr-1 xl:mr-2">Get started</span> for free</a
 				>
 			</div>
 		</div>
@@ -222,7 +222,7 @@
 						<h2
 							class="text-primary text-5xl text-secondary text-center lg:text-left"
 						>
-							Vinify
+							vinify
 						</h2>
 
 						<div

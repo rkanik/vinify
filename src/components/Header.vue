@@ -1,9 +1,11 @@
 <template>
-	<header class="header py-1 relative">
+	<header id="header" class="header py-1 relative">
 		<vn-container>
 			<vn-flex items-center justify-between class="h-16 lg:h-20 2xl:h-28">
 				<vn-flex items-center>
-					<h2 class="text-primary header__title">Vinify</h2>
+					<router-link to="/#header">
+						<h2 class="text-primary header__title">vinify</h2>
+					</router-link>
 					<vn-flex
 						on="lg"
 						items-center
@@ -25,9 +27,9 @@
 					</div>
 					<vn-flex
 						to="#"
-						class="bg-primary header__nav-item text-secondary rounded-xl lg:ml-12 2xl:ml-20 py-2 px-10 leading-none"
+						class="font-semibold bg-primary header__nav-item text-secondary rounded-lg lg:ml-12 2xl:ml-20 py-2 px-10 leading-none"
 					>
-						Signup
+						Sign Up
 					</vn-flex>
 				</vn-flex>
 				<button @click="menu = !menu" class="lg:hidden">

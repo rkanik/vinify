@@ -3,7 +3,7 @@
 		class="default-layout flex flex-col overflow-y-hidden h-screen min-h-screen"
 	>
 		<Header class="flex-none" />
-		<div class="flex-1 overflow-y-auto">
+		<div class="flex-1 overflow-y-auto scroll-smooth">
 			<router-view />
 		</div>
 	</div>
