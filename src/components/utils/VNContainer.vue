@@ -10,14 +10,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 	.vn-container {
-		padding-left: 28px;
-		padding-right: 28px;
+		padding-left: 30px;
+		padding-right: 30px;
 		@include on("lg") {
 			padding-left: 0;
 			padding-right: 0;
 		}
-		@include on("2p5xl") {
-			max-width: 1650px;
+		@include on("xl") {
+			max-width: 1183px;
+		}
+		@include on("2xl") {
+			max-width: 1183px;
 		}
 	}
 </style>

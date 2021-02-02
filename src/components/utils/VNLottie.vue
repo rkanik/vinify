@@ -1,5 +1,5 @@
 <template>
-	<div :style="style" class="overflow-hidden mx-auto" ref="lavContainer" />
+	<div :style="style" ref="lavContainer" />
 </template>
 <script>
 import lottie from 'lottie-web';

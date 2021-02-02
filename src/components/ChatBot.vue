@@ -35,3 +35,23 @@ export default {
 	}
 }
 </script>
+<style lang="scss">
+	#chat-bot {
+		height: 400px;
+		@include on("sm") {
+			height: 800px;
+		}
+		@include on("md") {
+			height: 1024px;
+		}
+		@include on("lg") {
+			height: 440px; // max-width 672
+		}
+		@include on("xl") {
+			height: 660px; // max-width 1024
+		}
+		@include on("2xl") {
+			height: 800px;
+		}
+	}
+</style>

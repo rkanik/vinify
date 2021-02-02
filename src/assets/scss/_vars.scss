@@ -8,14 +8,22 @@
 	--bg-green: #006c67;
 
 	// Font Size
-	--heading-font-size: 27px;
+	--heading-font-size: 20px;
 	--heading-xl-font-size: 27px;
-	--content-font-size: 17px;
+	--content-font-size: 15px;
+	--btn-font-size: 15px;
+	--footer-title-font-size: 25px;
 
 	// Line Height
-	--heading-line-height: 30px;
+	--heading-line-height: 25px;
 	--heading-xl-line-height: 30px;
 	--content-line-height: 20px;
+	--btn-line-height: 25px;
+	--footer-title-line-height: 30px;
+
+	// Paddings
+	--container-padding: 1.875rem;
+	--content-padding: 0;
 }
 
 @include on("sm") {
@@ -57,24 +65,31 @@
 @include on("xl") {
 	:root {
 		// Font Size
-		--heading-font-size: 45.4px;
-		--heading-xl-font-size: 61.8px;
-		--content-font-size: 27.4px;
+		--heading-font-size: 30px;
+		--heading-xl-font-size: 45px;
+		--content-font-size: 18px;
+		--btn-font-size: 18px;
+
 		// Line Height
-		--heading-line-height: 50px;
-		--heading-xl-line-height: 62px;
-		--content-line-height: 36px;
+		--heading-line-height: 35px;
+		--heading-xl-line-height: 50px;
+		--content-line-height: 25px;
+		--btn-line-height: 29.5px;
+
+		// Paddings
+		--container-padding: calc(calc(100% - 1183px) / 2);
+		--content-padding: 5.5625rem;
 	}
 }
-@include on("2xl") {
-	:root {
-		// Font Size
-		--heading-font-size: 50px;
-		--heading-xl-font-size: 70px;
-		--content-font-size: 30px;
-		// Line Height
-		--heading-line-height: 55px;
-		--heading-xl-line-height: 70px;
-		--content-line-height: 40px;
-	}
-}
+// @include on("2xl") {
+// 	:root {
+// 		// Font Size
+// 		--heading-font-size: 50px;
+// 		--heading-xl-font-size: 70px;
+// 		--content-font-size: 30px;
+// 		// Line Height
+// 		--heading-line-height: 55px;
+// 		--heading-xl-line-height: 70px;
+// 		--content-line-height: 40px;
+// 	}
+// }

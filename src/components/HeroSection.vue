@@ -2,116 +2,90 @@
 	<div>
 		<!-- Hero First -->
 		<div
-			class="bg-secondary relative pt-12 pb-40 lg:pt-0 lg:pb-0 overflow-hidden"
+			class="bg-secondary relative pb-36 pt-16 xl:pt-24 xl:pb-72 overflow-hidden"
 		>
-			<div class="relative z-20">
-				<div
-					class="ml-12 md:ml-16 lg:ml-0 lg:top-16 lg:left-16 xl:top-24 xl:left-24 2xl:left-32 2xl:top-32 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-3xl lg:absolute lg:z-10"
+			<!-- Hero content -->
+			<div class="px-con w-max z-20 relative">
+				<h1 class="heading-xl">
+					Everyone deserves<br />
+					a
+					<span class="text-accent">personal sommelier</span>
+				</h1>
+				<p class="content mt-5 xl:mt-6 max-w-xxxs xl:max-w-none">
+					Built for retailers, trained by sommeliers, tested by wine
+					lovers.
+				</p>
+				<a
+					href="#"
+					class="inline-block py-3 px-9 xl:px-10 mt-8 xl:mt-9 bg-primary text-secondary rounded-8px shadow-md text-btn"
+					><span class="font-semibold mr-1 xl:mr-2">Get started</span>for
+					free</a
 				>
-					<h1 class="heading-xl">
-						Everyone deserves<br />
-						a
-						<span class="lg:text-accent">personal sommelier</span>
-					</h1>
-					<p class="content mt-10 xl:mt-12 2xl:mt-14 mr-8 xl:max-w-3xl">
-						Understand your customers, capture data and make every
-						interaction with your brand memorable.
-					</p>
-					<a
-						href="#"
-						class="h-12 md:h-14 xl:h-16 2xl:h-20 w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 2xl:py-1 bg-primary text-secondary flex items-center justify-center rounded-8px mt-11 lg:mt-12 xl:mt-14 2xl:mt-16 shadow-md text-base lg:text-lg xl:text-2xl 2xl:text-3xl"
-						><span class="font-semibold mr-1 xl:mr-2">Get started</span
-						>for free</a
+				<br />
+				<a
+					href="#chat-bot-section"
+					class="inline-block px-9 content sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 mt-4 lg:mt-6 xl:mt-7 2xl:mt-8"
+				>
+					<span class="mr-3 font-semibold">Tell me more</span>
+					<svg
+						class="inline"
+						width="13.536"
+						height="8.556"
+						viewBox="0 0 13.536 8.556"
 					>
-					<a
-						href="#chat-bot-section"
-						class="flex items-center justify-center content w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 mt-5 lg:mt-6 xl:mt-7 2xl:mt-8"
-					>
-						<span class="mr-4 font-semibold">Tell me more</span>
-						<VNArrow width="17.862" height="10.846" />
-					</a>
-				</div>
-				<VNLottie v-if="isLargeDevice" :options="defaultOptions" />
+						<path
+							d="M358,828.733l5.739,6.4,6.343-6.4"
+							transform="translate(-357.256 -828.029)"
+							fill="none"
+							stroke="#3a2d53"
+							stroke-width="2"
+							opacity="0.3"
+						/>
+					</svg>
+				</a>
 			</div>
+			<VNLottie
+				v-if="isLargeDevice"
+				:options="defaultOptions"
+				:size="{ width: 700, height: 650, unit: 'px' }"
+				class="absolute right-0 bottom-0 z-0"
+			/>
 			<img
 				class="absolute inset-x-0 bottom-0 z-10 w-full scale-101 lg:hidden"
-				src="@/assets/svg/hero-shape-1.svg"
+				src="@/assets/svg/hero-shape-small.svg"
+			/>
+			<img
+				class="absolute inset-x-0 bottom-0 z-10 w-full scale-101 hidden lg:block"
+				src="@/assets/svg/hero-shape-large.svg"
 			/>
 		</div>
 
 		<!-- Hero Second -->
-		<div class="bg-primary relative h-72 sm:h-80 lg:hidden">
+		<div class="bg-primary relative h-32 sm:h-80 lg:hidden">
 			<img
-				class="hero-b-img absolute -mt-32 sm:-mt-48 right-4 sm:right-20 md:right-32 z-30 w-full"
+				class="hero-b-img absolute -mt-36 sm:-mt-48 right-12 sm:right-20 md:right-32 z-30 w-full"
 				src="@/assets/images/Sara_Circle_mobile-03.png"
-			/>
-		</div>
-
-		<!-- Chat bot -->
-		<div id="chat-bot-section" class="relative pb-12 lg:pb-4 overflow-hidden">
-			<vn-container>
-				<div class="text-center relative z-10">
-					<h2
-						class="heading text-secondary max-w-sm lg:max-w-lg xl:max-w-full mx-auto lg:mt-16 xl:mt-20 2xl:mt-24"
-					>
-						<span class="lg:hidden"
-							>Chat with Naomi below to find out more</span
-						>
-						<span class="hidden lg:block"
-							>Sell wine online? Chat to Naomi below.</span
-						>
-					</h2>
-					<svg
-						width="17.862"
-						height="10.846"
-						class="mx-auto mt-4 lg:mt-10 xl:mt-12 2xl:mt-14"
-						viewBox="0 0 17.862 10.846"
-					>
-						<path
-							d="M358,828.733l7.794,8.685,8.613-8.685"
-							transform="translate(-357.256 -828.029)"
-							fill="none"
-							stroke="#fbe9db"
-							stroke-width="2"
-							opacity="0.497"
-						/>
-					</svg>
-					<div
-						class="bg-white shadow-lg p-4 rounded-xl mt-5 lg:mt-12 xl:mt-14 2xl:mt-16 lg:max-w-2xl xl:max-w-5xl 2xl:max-w-6xl mx-auto"
-					>
-						<ChatBot />
-					</div>
-				</div>
-			</vn-container>
-			<img
-				class="absolute top-10 left-20 w-full scale-15 lg:hidden"
-				src="@/assets/svg/hero-shape-2.svg"
-			/>
-			<img
-				class="hidden lg:block absolute -top-1 left-0 w-full scale-101"
-				src="@/assets/images/section2-bgshape-large.png"
 			/>
 		</div>
 	</div>
 </template>
 
 <script>
-import ChatBot from '@/components/ChatBot';
 import VNLottie from '@/components/utils/VNLottie';
 import animationData from '@/assets/json/Hero_Full_Width.json';
+import HeroLottieJson from '@/assets/json/hero-lottie.json';
 import VNArrow from '@/components/icons/VNArrow.vue';
 export default {
 	name: 'HeroSection',
 	components: {
 		VNLottie,
-		VNArrow,
-		ChatBot
+		VNArrow
 	},
 	data() {
 		return {
 			defaultOptions: {
 				loop: false,
-				animationData
+				animationData: HeroLottieJson
 			},
 			isLargeDevice:
 				window.innerWidth >= 1024,
@@ -140,7 +114,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 	.hero-b-img {
-		width: 268px;
+		width: 189px;
 		@include on("sm") {
 			width: 294px;
 		}

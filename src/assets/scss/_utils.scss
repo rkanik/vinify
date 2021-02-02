@@ -41,6 +41,14 @@
 	font-size: var(--content-font-size);
 	line-height: var(--content-line-height);
 }
+.text-btn {
+	font-size: var(--btn-font-size);
+	line-height: var(--btn-line-height);
+}
+.text-footer-title {
+	font-size: var(--footer-title-font-size);
+	line-height: var(--footer-title-line-height);
+}
 .bg-primary {
 	&.bg-opacity-5 {
 		background-color: rgba(#3d2b56, 0.05);
@@ -77,6 +85,15 @@
 .max-w-xxs {
 	max-width: 18rem;
 }
+.max-w-xxxs {
+	max-width: 16rem;
+}
+.xl\:max-w-none {
+	@include on("xl") {
+		max-width: none;
+	}
+}
+
 .lg\:rounded-48px {
 	@include on("lg") {
 		border-radius: 48px;
@@ -115,4 +132,26 @@
 }
 .scroll-smooth {
 	scroll-behavior: smooth;
+}
+
+.pl-con {
+	padding-left: var(--container-padding);
+}
+.pr-con {
+	padding-right: var(--container-padding);
+}
+.px-con {
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+}
+
+.pl-cont {
+	padding-left: var(--content-padding);
+}
+.pr-cont {
+	padding-right: var(--content-padding);
+}
+.px-cont {
+	padding-left: var(--content-padding);
+	padding-right: var(--content-padding);
 }
