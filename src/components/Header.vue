@@ -1,7 +1,7 @@
 <template>
 	<header id="header" class="header py-2 lg:py-0 relative">
 		<vn-container>
-			<vn-flex items-center justify-between class="lg:h-16 2xl:h-28">
+			<vn-flex items-center justify-between class="lg:h-16">
 				<vn-flex items-center>
 					<router-link to="/#header">
 						<h2 class="text-primary header__title">vinify</h2>

@@ -2,7 +2,7 @@
 	<div>
 		<!-- Hero First -->
 		<div
-			class="bg-secondary relative pb-36 pt-16 xl:pt-24 xl:pb-72 overflow-hidden"
+			class="bg-secondary relative pb-36 pt-16 xl:pt-24 xl:pb-60 overflow-hidden"
 		>
 			<!-- Hero content -->
 			<div class="px-con w-max z-20 relative">
@@ -17,14 +17,14 @@
 				</p>
 				<a
 					href="#"
-					class="inline-block py-3 px-9 xl:px-10 mt-8 xl:mt-9 bg-primary text-secondary rounded-8px shadow-md text-btn"
+					class="inline-block py-3 px-9 xl:px-10 mt-8 xl:mt-9 bg-primary text-secondary rounded-8px shadow-xl text-btn"
 					><span class="font-semibold mr-1 xl:mr-2">Get started</span>for
 					free</a
 				>
 				<br />
 				<a
 					href="#chat-bot-section"
-					class="inline-block px-9 content sm:w-60 md:w-64 lg:w-72 xl:w-80 2xl:w-96 mt-4 lg:mt-6 xl:mt-7 2xl:mt-8"
+					class="inline-block px-9 xl:px-11 content mt-4 lg:mt-5"
 				>
 					<span class="mr-3 font-semibold">Tell me more</span>
 					<svg
@@ -43,11 +43,50 @@
 						/>
 					</svg>
 				</a>
+				<svg
+					width="47.77"
+					height="65.515"
+					class="hidden lg:block mt-2"
+					viewBox="0 0 47.77 65.515"
+				>
+					<g
+						transform="matrix(0.588, -0.809, 0.809, 0.588, -13.828, 43.414)"
+					>
+						<line
+							x1="9.42"
+							y2="10.276"
+							transform="matrix(0.985, -0.174, 0.174, 0.985, 46, 11.681)"
+							fill="none"
+							stroke="#2c6a67"
+							stroke-width="1"
+						/>
+						<line
+							x1="9.42"
+							y1="10.276"
+							transform="matrix(0.985, -0.174, 0.174, 0.985, 43.794, 1.636)"
+							fill="none"
+							stroke="#2c6a67"
+							stroke-width="1"
+						/>
+						<path
+							d="M55.391,1.758S5.363-9.546,0,25.179"
+							transform="matrix(0.985, -0.174, 0.174, 0.985, 0, 18.008)"
+							fill="none"
+							stroke="#2c6a67"
+							stroke-width="1"
+						/>
+					</g>
+				</svg>
+				<p
+					class="hidden text-accent lg:inline-block transform -rotate-12 -translate-x-8"
+				>
+					Limited time only!
+				</p>
 			</div>
 			<VNLottie
 				v-if="isLargeDevice"
 				:options="defaultOptions"
-				:size="{ width: 700, height: 650, unit: 'px' }"
+				:size="lottieSize"
 				class="absolute right-0 bottom-0 z-0"
 			/>
 			<img
@@ -72,7 +111,6 @@
 
 <script>
 import VNLottie from '@/components/utils/VNLottie';
-import animationData from '@/assets/json/Hero_Full_Width.json';
 import HeroLottieJson from '@/assets/json/hero-lottie.json';
 import VNArrow from '@/components/icons/VNArrow.vue';
 export default {
@@ -89,6 +127,8 @@ export default {
 			},
 			isLargeDevice:
 				window.innerWidth >= 1024,
+			isXLargeDevice:
+				window.innerWidth >= 1280
 		}
 	},
 	mounted() {
@@ -99,6 +139,21 @@ export default {
 			);
 		});
 	},
+	computed: {
+		lottieSize() {
+			let width = this.isXLargeDevice
+				? 880
+				: this.isLargeDevice
+					? 780
+					: window.innerWidth
+			let height = this.isXLargeDevice
+				? 670
+				: this.isLargeDevice
+					? 570
+					: window.innerWidth
+			return { width, height, unit: 'px' }
+		}
+	},
 	beforeDestroy() {
 		window.removeEventListener(
 			"resize", this.onResize
@@ -108,6 +163,8 @@ export default {
 		onResize() {
 			this.isLargeDevice =
 				window.innerWidth >= 1024
+			this.isXLargeDevice =
+				window.innerWidth >= 1280
 		},
 	},
 }

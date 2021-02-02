@@ -1,5 +1,8 @@
 <template>
-	<div :id="id" class="w-full" />
+	<div class="chatbot-wrapper relative">
+		<div :id="id" class="w-full h-full rounded-3xl bg-white shadow-lg overflow-hidden" />
+		<slot />
+	</div>
 </template>
 
 <script>
@@ -36,7 +39,7 @@ export default {
 }
 </script>
 <style lang="scss">
-	#chat-bot {
+	.chatbot-wrapper {
 		height: 400px;
 		@include on("sm") {
 			height: 800px;
@@ -45,13 +48,10 @@ export default {
 			height: 1024px;
 		}
 		@include on("lg") {
-			height: 440px; // max-width 672
+			height: 440px;
 		}
 		@include on("xl") {
-			height: 660px; // max-width 1024
-		}
-		@include on("2xl") {
-			height: 800px;
+			height: 570px;
 		}
 	}
 </style>

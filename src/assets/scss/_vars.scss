@@ -23,7 +23,7 @@
 
 	// Paddings
 	--container-padding: 1.875rem;
-	--content-padding: 0;
+	--content-padding: 1.875rem;
 }
 
 @include on("sm") {
