@@ -102,12 +102,9 @@ export default {
 <style lang='scss'>
 	.header {
 		&__title {
-			@include font(25px, 40px);
+			@include font(25px, 36px);
 			@include on("xl") {
-				@include font(40px, 50px);
-			}
-			@include on("2xl") {
-				@include font(50px, 50px);
+				@include font(32px, 36px);
 			}
 		}
 		&__nav-item {

@@ -87,7 +87,7 @@
 							on an easy to understand dashboard
 						</h2>
 						<hr
-							class="my-5 w-64 sm:w-full sm:max-w-sm lg:max-w-none lg:w-auto mx-auto lg:mx-0 border-t border-primary border-opacity-25"
+							class="my-5 border-t border-primary border-opacity-25 w-64 sm:w-full sm:max-w-sm lg:max-w-xl lg:w-auto mx-auto px-3 lg:px-0 lg:mx-0"
 						/>
 						<p
 							class="content w-64 sm:w-full sm:max-w-sm lg:max-w-xl lg:w-auto mx-auto px-3 lg:px-0 lg:mx-0"
@@ -132,7 +132,7 @@
 								popular regions and grape varieties
 							</h2>
 							<hr
-								class="my-5 lg:my-0 lg:mt-5 lg:mb-7 border-t border-primary border-opacity-25 mx-5 lg:mx-0"
+								class="mx-auto lg:mx-0 my-5 lg:my-0 lg:mt-5 lg:mb-7 border-t border-primary border-opacity-25 w-56 sm:w-full sm:max-w-sm lg:w-auto"
 							/>
 							<p
 								class="content w-56 sm:w-full sm:max-w-sm lg:w-auto mx-auto lg:mx-0 lg:pr-8"
@@ -175,7 +175,7 @@
 								customers that you know will love it!
 							</h2>
 							<hr
-								class="my-4 lg:my-0 lg:mt-6 lg:mb-7 border-t border-primary border-opacity-25 mx-2 lg:mx-0"
+								class="my-4 lg:my-0 lg:mt-6 lg:mb-7 border-t border-primary border-opacity-25 mx-auto lg:mx-0 w-64 sm:w-full sm:max-w-sm lg:w-auto lg:max-w-xl lg:mr-8"
 							/>
 							<p
 								class="content w-64 sm:w-full sm:max-w-sm lg:w-auto lg:max-w-xl mx-auto lg:mx-0 lg:mr-8"
@@ -252,7 +252,7 @@
 								with Shopify or Woocommerce with a click of a button
 							</h2>
 							<hr
-								class="my-5 mx-8 lg:mt-6 lg:mb-7 border-t border-primary border-opacity-25 lg:mx-0"
+								class="my-5 mx-8 lg:mt-6 lg:mb-7 border-t border-primary border-opacity-25 lg:mx-0 sm:w-full sm:max-w-sm lg:w-auto lg:max-w-xl lg:mr-8"
 							/>
 							<p class="content mx-6 lg:mx-0 lg:mr-10">
 								Our Shopify and Woocommerce plugins offer a one click
@@ -280,7 +280,7 @@
 				class="flex lg:block flex-col items-center justify-center px-con z-10 text-center absolute w-full inset-0 lg:top-auto lg:left-auto lg:bottom-16 xl:bottom-44 lg:right-0 lg:max-w-78/100"
 			>
 				<h2
-					class="heading mx-2 mt-24 max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-lg lg:mx-auto"
+					class="heading mx-2 mt-24 max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-lg lg:mx-auto w-56 sm:w-full lg:w-auto"
 				>
 					Keep connected with your <br class="hidden lg:block" />
 					customers anytime, anywhere.
@@ -296,11 +296,11 @@
 		<!-- -------- -->
 		<!-- Bottom -->
 
-		<div class="bg-primary py-10 xl:py-24 relative z-10">
+		<footer class="bg-primary py-10 xl:py-24 relative z-10">
 			<vn-container>
 				<div class="px-6 lg:px-0">
-					<div class="lg:flex lg:space-x-16 lg:justify-between">
-						<h2 class="text-primary text-5xl text-secondary">vinify</h2>
+					<div class="lg:flex lg:justify-between">
+						<h2 class="text-primary text-5xl text-secondary lg:mr-16">vinify</h2>
 
 						<div
 							class="mt-12 lg:mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12"
@@ -311,7 +311,7 @@
 									>About</span
 								>
 								<div
-									class="flex flex-col content text-secondary mt-4 2xl:mt-5"
+									class="flex flex-col content text-secondary mt-4 xl:mt-6"
 								>
 									<a href="#">Get Started</a>
 									<a href="#">Why Vinify?</a>
@@ -329,7 +329,7 @@
 									>Need Help?</span
 								>
 								<div
-									class="flex flex-col content text-secondary mt-4 2xl:mt-5"
+									class="flex flex-col content text-secondary mt-4 xl:mt-6"
 								>
 									<a href="#">Knowledge Centre</a>
 									<a href="#">Drop us an email</a>
@@ -343,7 +343,7 @@
 									>Partnership</span
 								>
 								<div
-									class="flex flex-col content text-secondary mt-4 2xl:mt-5"
+									class="flex flex-col content text-secondary mt-4 xl:mt-6"
 								>
 									<a href="#">Collaboration</a>
 									<a href="#">Know your wine?</a>
@@ -356,7 +356,7 @@
 									>Social</span
 								>
 								<div
-									class="text-secondary flex flex-col content text-secondary mt-4 2xl:mt-5"
+									class="text-secondary flex flex-col content text-secondary mt-4 xl:mt-6"
 								>
 									<a href="#">Facebook</a>
 									<a href="#">Instagram</a>
@@ -366,7 +366,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="home__empty-box v3 hidden xl:block" />
+
+						<div class="home__empty-box v3 hidden xl:block xl:ml-0 flex-none" />
 					</div>
 
 					<!-- 5 -->
@@ -377,7 +378,7 @@
 					</div>
 				</div>
 			</vn-container>
-		</div>
+		</footer>
 	</div>
 </template>
 

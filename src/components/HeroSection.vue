@@ -58,7 +58,7 @@
 							transform="matrix(0.985, -0.174, 0.174, 0.985, 46, 11.681)"
 							fill="none"
 							stroke="#2c6a67"
-							stroke-width="1"
+							stroke-width="1.5"
 						/>
 						<line
 							x1="9.42"
@@ -66,14 +66,14 @@
 							transform="matrix(0.985, -0.174, 0.174, 0.985, 43.794, 1.636)"
 							fill="none"
 							stroke="#2c6a67"
-							stroke-width="1"
+							stroke-width="1.5"
 						/>
 						<path
 							d="M55.391,1.758S5.363-9.546,0,25.179"
 							transform="matrix(0.985, -0.174, 0.174, 0.985, 0, 18.008)"
 							fill="none"
 							stroke="#2c6a67"
-							stroke-width="1"
+							stroke-width="1.5"
 						/>
 					</g>
 				</svg>
@@ -87,7 +87,7 @@
 				v-if="isLargeDevice"
 				:options="defaultOptions"
 				:size="lottieSize"
-				class="absolute right-0 bottom-0 z-0"
+				class="absolute right-0 bottom-0 z-0 mr-con transform translate-x-20"
 			/>
 			<img
 				class="absolute inset-x-0 bottom-0 z-10 w-full scale-101 lg:hidden"

@@ -37,7 +37,7 @@
 	line-height: var(--heading-xl-line-height);
 }
 .content {
-	color: var(--text-primary);
+	color: #5c5c5c;
 	font-size: var(--content-font-size);
 	line-height: var(--content-line-height);
 }
@@ -170,6 +170,9 @@
 }
 .pr-cont {
 	padding-right: var(--content-padding);
+}
+.mr-con {
+	margin-right: var(--container-padding);
 }
 .px-cont {
 	padding-left: var(--content-padding);
